@@ -1,0 +1,189 @@
+:root{
+    --green: #589C57;
+    --text: #303F2E;
+    --white: #F0F0F0
+}
+
+#home{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#greetings1, #greetings2{
+    text-align: center;
+    font-size: 80px;
+    color: var(--text);
+    font-weight: bolder;
+    width: 100%;
+    position: inherit;
+    line-height: 1;
+}
+
+#greetings1{
+    top: 16vh;
+    z-index: 1;
+}
+
+#greetings2{
+    top: 32vh;
+    z-index: 5;
+}
+
+#cerve1, #cerve2{
+    height: 460px;
+    z-index: 2;
+    position: absolute;
+}
+
+#cerve1{
+    left: calc(50vw - 410px);
+    transform: rotate(15deg);
+    top: 27vh;
+    animation: 2s linear cerve1;
+}
+
+#cerve2{
+    right: calc(50vw - 410px);
+    transform: rotate(-15deg);
+    top: 28vh;
+    animation: 2s linear cerve2;
+}
+
+#info{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin-right: clamp(1px, 5%, 10%);;
+    right: 0;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.info-block{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+}
+
+.info-icon *{
+    fill: var(--text);
+    stroke: none;
+}
+
+#clock{
+    height: 45px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+    overflow: visible;
+}
+
+#sign{
+    height: 45px;
+    position: relative;
+    left: 5px;
+    top: 0px;
+}
+
+.info-text{
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 100;
+    margin: 0;
+}
+
+#sticker{
+    position: absolute;
+    top: 73%;
+    left: clamp(20px, 8%, 100px);
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    cursor: pointer;   
+}
+
+#sticker #letterDonut{
+    position: absolute;
+    overflow:visible;
+    width: 150px;
+    top: 0;
+    left: 0;
+    transform-origin: 75px 75px;
+    animation: 10s linear infinite donut;
+}
+
+#sticker #letterDonut .stickerText{
+    fill: var(--text);
+    font-size: 15px;
+}
+
+#iconBeer{
+    height: 140px;
+    position: absolute;
+    left: 14%;
+    top: 10%;
+    fill: var(--text);
+}
+
+#iconBeer:hover{
+    animation: 0.5s linear infinite beerIcon;
+}
+
+#iconBeer *{
+    fill: var(--text);
+}
+
+#callToAction{
+    position: absolute;
+    right: -90px;
+    height: 150px;
+    width: 150px;
+    top: 60vh;
+    border-radius: 600px;
+    background-color: var(--text);
+    z-index: 6;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+#callToAction:hover{
+    background-color: var(--white);
+    color: var(--text);
+}
+
+#callToAction:hover::after{
+    content: "Go";
+    color: var(--text);
+    position: absolute;
+    font-size: 20px;
+    top: 34%;
+    left: 10%;
+}
+
+#callToAction #reservation{
+    overflow:visible;
+    position: absolute;
+    transform: rotate(-47deg);
+    top: -57px;
+    left: 10px;
+}
+
+#callToAction #reservation .actionText{
+    fill: var(--white);
+    font-weight: 100;
+}
+
+.cut{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}

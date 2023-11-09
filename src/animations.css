@@ -1,0 +1,65 @@
+@keyframes donut {
+    0% {
+        transform: rotate(0deg);
+    }    
+    50% {
+        transform: rotate(180deg);
+    }    
+    100% {
+        transform: rotate(360deg);
+    }    
+}
+
+@keyframes beerIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    75%{transform: rotate(-20deg);}
+}
+
+@keyframes cerve1 {
+    0%{
+        transform: translate(-60vw, 0) rotate(40deg);
+    }
+
+    50%{
+        transform: translate(-60vw, 0) rotate(40deg);
+    }
+
+    80%{
+        transform: translate(-10vw, 0) rotate(40deg);
+    }
+
+    95%{
+        transform: translate(20px, 0) rotate(5deg);
+    }
+
+    100%{
+        transform: translate(0) rotate(15deg);
+    }
+}
+
+@keyframes cerve2 {
+    0%{
+        transform: translate(60vw, 0) rotate(-40deg);
+    }
+
+    50%{
+        transform: translate(60vw, 0) rotate(-40deg);
+    }
+
+    80%{
+        transform: translate(10vw, 0) rotate(-40deg);
+    }
+
+    95%{
+        transform: translate(-20px, 0) rotate(-5deg);
+    }
+
+    100%{
+        transform: translate(0) rotate(-15deg);
+    }
+}
