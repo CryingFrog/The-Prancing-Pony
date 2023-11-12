@@ -1,6 +1,8 @@
 import AppendHome from './home';
+import AppendMenu from './menu';
 import './headerStyles.css';
 import './homeStyles.css';
+import './menuStyles.css';
 import './fonts.css';
 import './animations.css';
 import favicon from './favicon.svg';
@@ -12,5 +14,4 @@ const link = document.createElement('link');
   link.href = favicon;
 head.appendChild (link);
 
-
-AppendHome(document.body);
+AppendMenu(document.body);
