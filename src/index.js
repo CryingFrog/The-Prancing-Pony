@@ -1,8 +1,10 @@
 import AppendHome from './home';
 import AppendMenu from './menu';
+import AppendContact from './contact';
 import './headerStyles.css';
 import './homeStyles.css';
 import './menuStyles.css';
+import './contactStyles.css'; 
 import './fonts.css';
 import './animations.css';
 import favicon from './favicon.svg';
@@ -14,4 +16,4 @@ const link = document.createElement('link');
   link.href = favicon;
 head.appendChild (link);
 
-AppendMenu(document.body);
+AppendContact(document.body);

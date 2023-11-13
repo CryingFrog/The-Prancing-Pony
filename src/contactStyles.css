@@ -1,0 +1,138 @@
+:root{
+    --green: #589C57;
+    --text: #303F2E;
+    --white: #F0F0F0;
+    --lightGreen: #75B36B;
+    --blur: #303f2ec4;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#contact{
+    margin-top: 60px; 
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+#divForm{
+    height: 100%;
+    width: 55%;
+    padding: 55px;
+    position: relative;
+}
+
+#divMap{
+    height: 100%;
+    width: 45%;
+    position: relative;
+}
+
+#divForm form{
+    position: absolute;
+    width: 80%;
+    bottom: 80px;
+}
+
+#divForm h2{
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-top: 10%;
+}
+
+#divForm h3{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+#divForm p{
+    font-weight: 100;
+    font-size: 0.6rem;
+    line-height: 1.5;
+    width: 50%;
+}
+
+#divForm label{
+    display: block;
+    position: relative;
+    left: 10px;
+    margin: 0;
+    margin-bottom: -7px;
+}
+
+#divForm input,
+#divForm textarea{
+    caret-color: var(--text);
+    margin: 0;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--white);
+    width: 50%;
+    padding: 0;
+    padding-left: 10px;
+    font-size: .8rem;
+}
+
+#divForm input:focus,
+#divForm textarea:focus{
+    outline: solid 3px var(--text);
+}
+
+#divForm #inputMessage{
+    width: 100%;
+    height: 150px;
+    vertical-align: top;
+    line-height: 2.3;
+}
+
+#mapContainer{
+    position: absolute;
+    bottom: 60px;
+}
+
+#map{
+    margin-top: 20px;
+}
+
+#divMap h2{
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 0;
+}
+
+#divMap h3{
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.5;
+    margin: 0;
+    width: 50%;
+}
+
+#divMapText{
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#map{
+    position: relative;
+}
+
+#divMap #mapImg{
+    width: calc(100% - 80px);
+    margin-left: 40px;
+}
+
+#divMap #pinImg{
+    height: 40px;
+    left: 47%;
+    top: 43%;
+    position: absolute;
+}
