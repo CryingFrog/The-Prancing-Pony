@@ -9,6 +9,26 @@ import './fonts.css';
 import './animations.css';
 import favicon from './favicon.svg';
 
+const homeBtn = document.getElementById('homeLi');
+const menuBtn = document.getElementById('menuLi');
+const contactBtn = document.getElementById('contactLi');
+const contentDiv = document.getElementById('content');
+
+let loadPage = (page) => {
+  contentDiv.innerHTML = '';
+  switch (page){
+    case 'home':
+      AppendHome(contentDiv);
+      break;
+    case 'menu':
+      AppendMenu(contentDiv);
+      break;
+    case 'contact':
+      AppendContact(contentDiv);
+      break;
+  }
+}
+
 const head = document.querySelector('head');
 const link = document.createElement('link');
   link.type = 'image/x-icon';
@@ -16,4 +36,8 @@ const link = document.createElement('link');
   link.href = favicon;
 head.appendChild (link);
 
-AppendContact(document.body);
+loadPage('home');
+
+homeBtn.addEventListener("click", () => loadPage('home'));
+menuBtn.addEventListener("click", () => loadPage('menu'));
+contactBtn.addEventListener("click", () => loadPage('contact'));
